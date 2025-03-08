@@ -1,6 +1,6 @@
 # Bingo Simulator in C
 
-This is a **C** program developed for the **Fundamentals of Programming** course at the **Open University of Catalonia (UOC)**. It was created in **November 2004** and aims to simulate a bingo game between two players.
+This is a **C** program developed for the "Fundamentos de la Programación" (Fundamentals of Programming) course at **Universitat Oberta de Catalunya (UOC)**. It was created in **November 2004** and aims to simulate a bingo game between two players.
 
 ## Project Description
 The program automatically generates two bingo cards and simulates the process of drawing random numbers until one (or both) of the players completes their card. Functions are used to print the cards, generate random numbers, and verify the players' matches.
