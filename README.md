@@ -1,47 +1,67 @@
 # Bingo Simulator in C
 
-This is a **C** program developed for the "Fundamentos de la Programación" (Fundamentals of Programming) course at **Universitat Oberta de Catalunya (UOC)**. It was created in **November 2004** and aims to simulate a bingo game between two players.
+[🇪🇸 Leer en español](README_es.md)
+
+## Demo Video
+
+[Watch the demo video](https://youtu.be/t-Mx-mWwi7g)
+
+## Screenshot
+
+<img src="img/bingo.png" alt="Bingo simulator screenshot" width="600">
 
 ## Project Description
-The program automatically generates two bingo cards and simulates the process of drawing random numbers until one (or both) of the players completes their card. Functions are used to print the cards, generate random numbers, and verify the players' matches.
 
-Additionally, the code includes functionality to differentiate compilation based on the operating system:
-- **Windows:** Uses `Sleep()` and `cls` for pausing and clearing the screen.
-- **Mac/Linux:** Uses `usleep()` and `clear` for the same functionality.
+This is a **C** program developed for the "Fundamentos de la Programación" (Fundamentals of Programming) course at **Universitat Oberta de Catalunya (UOC)**. It simulates a bingo game between two players directly in the terminal.
+
+The program creates two bingo cards, draws random numbers from 0 to 99, marks each player's hits, and finishes when one player completes all 20 numbers on their card. If both players complete their cards on the same draw, the game ends in a tie.
 
 ## How It Works
-1. The bingo cards are initialized with `-1` values.
-2. Numbers are randomly assigned to the cards.
-3. The initial state of the cards is displayed.
-4. Random numbers are drawn, and if they match the numbers on the card, they are marked.
-5. The process continues until a player (or both) achieves 20 matches.
-6. The final cards are displayed, and the winner is determined.
+
+1. Three 100-position arrays are initialized with `-1`: player 1's card, player 2's card, and the drawn-number board.
+2. Each player receives 20 random numbers, distributed across the 0-99 range.
+3. The initial empty boards and the generated player cards are displayed in the terminal.
+4. The program draws random numbers without repeating them.
+5. When a drawn number appears on a player's card, it is marked with the ASCII block character.
+6. The simulation continues until player 1, player 2, or both players reach 20 hits.
+7. The final drawn-number board is displayed and the winner is announced.
+
+## Platform Support
+
+The source code includes small platform-specific sections so the same program can run on different operating systems:
+
+- **Windows:** uses `Sleep()` and `cls`.
+- **macOS/Linux:** uses `usleep()` and `clear`.
 
 ## Requirements
-To compile and run the program, a **C** compiler like **GCC** is needed:
+
+You only need a C compiler such as **GCC**.
 
 ### Windows
+
 ```sh
-gcc -o bingo.exe bingo.c
-./bingo.exe
+gcc -o Bingo.exe Bingo.c
+./Bingo.exe
 ```
 
-### Mac/Linux
+### macOS/Linux
+
 ```sh
-gcc -o bingo bingo.c
-./bingo
+gcc -o Bingo Bingo.c
+./Bingo
 ```
 
-## Source Code
-The source code is available in this repository and can be executed on **Windows, Mac, and Linux** without additional modifications.
+## Repository Contents
 
-## Video Explanation
-You can watch a detailed explanation of the code in the following YouTube video:
-[![Video Explanation](https://img.youtube.com/vi/t-Mx-mWwi7g/0.jpg)](https://youtu.be/t-Mx-mWwi7g)
+- `Bingo.c`: main source code.
+- `img/bingo.png`: screenshot of the program running.
+- `README.md`: English documentation.
+- `README_es.md`: Spanish documentation.
 
 ## Author
-This project was developed by **[Your Name]** as part of learning structured programming in **C**.
+
+Developed by **Raul Estevez** as part of a structured programming exercise in **C**.
 
 ## License
-This project is distributed under the **MIT License**, allowing for free use, modification, and distribution for educational and personal purposes.
 
+No license file is currently included in this repository.
