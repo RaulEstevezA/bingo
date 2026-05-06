@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Xcode / Apple build artifacts
+*.dSYM/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+.swiftpm/
+*.xcscmblueprint
+
+# Compiled C outputs
+/Bingo
+/Bingo.exe
+*.o
+*.out
+
+# Local editor state
+.vscode/
+.idea/
