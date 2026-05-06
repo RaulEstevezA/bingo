@@ -8,7 +8,9 @@
 
 ## Captura de pantalla
 
-<img src="img/bingo.png" alt="Captura del simulador de Bingo" width="600">
+<p align="center">
+    <img src="img/bingo.png" alt="Captura del simulador de Bingo" width="600">
+</p>
 
 ## Descripción del proyecto
 

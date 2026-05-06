@@ -8,7 +8,9 @@
 
 ## Screenshot
 
-<img src="img/bingo.png" alt="Bingo simulator screenshot" width="600">
+<p align="center">
+    <img src="img/bingo.png" alt="Bingo simulator screenshot" width="600">
+</p>
 
 ## Project Description
 
